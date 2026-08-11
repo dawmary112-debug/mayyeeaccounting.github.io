@@ -145,16 +145,17 @@ a {
 
 .hero-photo {
     width: 330px;
-    height: 390px;
-
+    height: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .hero-photo img {
-    width: 260px;
-    height: 340px;
+    width: 270px;
+    height: 420px;
     object-fit: cover;
+    object-position: center top;
     border-radius: 12px;
     display: block;
     box-shadow: 0 20px 45px rgba(0,0,0,0.3);
