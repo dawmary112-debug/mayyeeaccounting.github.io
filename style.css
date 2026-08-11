@@ -648,6 +648,6 @@ Create professional portfolio designv
     width: 280px;
     height: 280px;
     object-fit: cover;
-    border-radius: 50%;
+   border-radius: 12px;
     display: block;
 }
