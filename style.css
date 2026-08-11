@@ -647,9 +647,8 @@ Create professional portfolio designv
 .certificate-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    max-width: 1000px;
-    margin: auto;
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .certificate-card {
@@ -657,43 +656,7 @@ Create professional portfolio designv
     padding: 15px;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(15,23,42,0.08);
-    overflow: hidden;
-}
-
-.certificate-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
-}
-
-@media (max-width: 650px) {
-
-    .certificate-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-/* =========================================
-   CERTIFICATE IMAGES
-========================================= */
-
-.certificate-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.certificate-card {
-    background: white;
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 25px rgba(15,23,42,0.08);
-    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
 }
 
 .certificate-card img {
