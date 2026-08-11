@@ -151,7 +151,14 @@ a {
     justify-content: center;
     align-items: center;
 }
-
+.hero-photo img {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+}
 .photo-placeholder {
     width: 280px;
     height: 340px;
@@ -632,22 +639,4 @@ footer {
     }
 }
 Create professional portfolio designv
-/* =========================
-   PROFILE PHOTO
-========================= */
 
-.hero-photo {
-    width: 320px;
-    height: 320px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-photo img {
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
-   border-radius: 12px;
-    display: block;
-}
