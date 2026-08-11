@@ -632,3 +632,22 @@ footer {
     }
 }
 Create professional portfolio designv
+/* =========================
+   PROFILE PHOTO
+========================= */
+
+.hero-photo {
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-photo img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
