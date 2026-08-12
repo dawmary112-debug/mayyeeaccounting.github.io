@@ -641,14 +641,15 @@ footer {
 }
 Create professional portfolio designv
 /* =========================================
-   CERTIFICATE IMAGES
+   CERTIFICATES
 ========================================= */
 
 .certificate-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .certificate-card {
@@ -656,17 +657,31 @@ Create professional portfolio designv
     padding: 15px;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
-    box-shadow: 0 10px 30px rgba(15,23,42,0.08);
+    box-shadow: 0 8px 25px rgba(15,23,42,0.08);
+    transition: 0.3s;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(15,23,42,0.12);
 }
 
 .certificate-card img {
     width: 100%;
-    height: auto;
+    height: 320px;
+    object-fit: contain;
     display: block;
     border-radius: 6px;
 }
+@media (max-width: 900px) {
 
-@media (max-width: 650px) {
+    .certificate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
 
     .certificate-grid {
         grid-template-columns: 1fr;
