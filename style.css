@@ -918,3 +918,7 @@ footer {
 .hero h2.typing-title {
     color: #E0C15A !important;
 }
+.hero h2.typing-title {
+    color: red !important;
+    font-weight: 700 !important;
+}
