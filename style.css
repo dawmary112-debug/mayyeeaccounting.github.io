@@ -794,29 +794,21 @@ footer {
 
 
 /* =========================================
-   HERO TITLE & FINANCE KEYWORDS
+   HERO FINANCE KEYWORDS
 ========================================= */
 
-/* Moving typing title */
-.hero h2.typing-title {
-    color: #E0C15A !important;
-    font-weight: 700 !important;
-}
-
-
-/* Finance keywords */
 .hero-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+
     margin-bottom: 25px;
+
     overflow: visible;
 }
 
-
-/* Yellow floating keywords */
 .hero-skills span {
-    color: #E0C15A !important;
+    color: #f8fafc;
 
     font-size: 12px;
     font-weight: 700;
@@ -825,17 +817,20 @@ footer {
 
     padding: 6px 12px;
 
-    border: 1px solid #E0C15A;
+    border: 1px solid rgba(224,193,90,0.65);
 
     border-radius: 20px;
 
-    background: rgba(224,193,90,0.10);
+    background: rgba(224,193,90,0.06);
 
     animation: skillFloat 3s ease-in-out infinite;
+
+    transition: 0.3s ease;
 }
 
 
 /* Different floating timing */
+
 .hero-skills span:nth-child(2) {
     animation-delay: 0.2s;
 }
@@ -858,41 +853,6 @@ footer {
 
 
 /* Floating animation */
-@keyframes skillFloat {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-4px);
-    }
-
-}
-
-/* Slightly different timing */
-
-.hero-skills span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.hero-skills span:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.hero-skills span:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-.hero-skills span:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-.hero-skills span:nth-child(6) {
-    animation-delay: 1s;
-}
-
 
 @keyframes skillFloat {
 
@@ -908,56 +868,11 @@ footer {
 }
 
 
-/* Photo hover */
+/* Hover effect */
 
-.hero-photo img {
-    transition:
-        transform 0.5s ease,
-        box-shadow 0.5s ease;
-}
-
-.hero-photo img:hover {
-    transform: translateY(-8px) scale(1.02);
-
-    box-shadow:
-        0 25px 55px rgba(0,0,0,0.4);
-}
-
-
-/* Button animation */
-
-.hero-buttons .button {
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.hero-buttons .button:hover {
+.hero-skills span:hover {
+    color: #E0C15A;
+    border-color: #E0C15A;
+    background: rgba(224,193,90,0.12);
     transform: translateY(-3px);
-
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.2);
-}
-
-
-/* Mobile */
-
-@media (max-width: 650px) {
-
-    .hero-skills {
-        justify-content: center;
-    }
-
-    .hero-skills span {
-        font-size: 11px;
-        padding: 5px 9px;
-    }
-
-}
-.hero h2.typing-title {
-    color: #E0C15A !important;
-}
-.hero h2.typing-title {
-    color: red !important;
-    font-weight: 700 !important;
 }
