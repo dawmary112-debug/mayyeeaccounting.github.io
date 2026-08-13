@@ -750,7 +750,7 @@ footer {
     }
 
 }
-/* ========================================= 
+/* =========================================
    MODERN HERO ANIMATIONS
 ========================================= */
 
@@ -794,21 +794,29 @@ footer {
 
 
 /* =========================================
-   HERO FINANCE KEYWORDS
+   MOVING TITLE
+========================================= */
+
+.hero h2.typing-title {
+    color: #E0C15A !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================
+   MOVING FINANCE KEYWORDS
 ========================================= */
 
 .hero-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
     margin-bottom: 25px;
-
-    overflow: visible;
+    overflow: hidden;
 }
 
 .hero-skills span {
-    color: #f8fafc;
+    color: #E0C15A;
 
     font-size: 12px;
     font-weight: 700;
@@ -817,19 +825,21 @@ footer {
 
     padding: 6px 12px;
 
-    border: 1px solid rgba(224,193,90,0.65);
+    border: 1px solid #E0C15A;
 
     border-radius: 20px;
 
-    background: rgba(224,193,90,0.06);
+    background: rgba(224,193,90,0.08);
 
     animation: skillFloat 3s ease-in-out infinite;
-
-    transition: 0.3s ease;
 }
 
 
 /* Different floating timing */
+
+.hero-skills span:nth-child(1) {
+    animation-delay: 0s;
+}
 
 .hero-skills span:nth-child(2) {
     animation-delay: 0.2s;
@@ -868,11 +878,55 @@ footer {
 }
 
 
-/* Hover effect */
+/* =========================================
+   PHOTO HOVER
+========================================= */
 
-.hero-skills span:hover {
-    color: #E0C15A;
-    border-color: #E0C15A;
-    background: rgba(224,193,90,0.12);
+.hero-photo img {
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+.hero-photo img:hover {
+    transform: translateY(-8px) scale(1.02);
+
+    box-shadow:
+        0 25px 55px rgba(0,0,0,0.4);
+}
+
+
+/* =========================================
+   BUTTON ANIMATION
+========================================= */
+
+.hero-buttons .button {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.hero-buttons .button:hover {
     transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .hero-skills {
+        justify-content: center;
+    }
+
+    .hero-skills span {
+        font-size: 11px;
+        padding: 5px 9px;
+    }
+
 }
