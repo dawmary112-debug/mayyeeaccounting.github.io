@@ -197,22 +197,30 @@ a {
     transition: 0.3s;
 }
 
-.primary-button {
-    background: white;
-    color: #172554;
-}
-
-.primary-button:hover {
-    transform: translateY(-2px);
-}
-
+.primary-button,
 .secondary-button {
-    border: 1px solid #64748b;
-    color: white;
+    background: #38BDF8;
+    color: #FFFFFF;
+
+    border: 1px solid #38BDF8;
+
+    padding: 13px 25px;
+    border-radius: 7px;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: all 0.3s ease;
 }
 
+.primary-button:hover,
 .secondary-button:hover {
-    background: rgba(255,255,255,0.1);
+    background: #60A5FA;
+    border-color: #60A5FA;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.25);
 }
 
 
