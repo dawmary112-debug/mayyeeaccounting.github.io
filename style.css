@@ -810,71 +810,39 @@ footer {
 .hero-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 25px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .hero-skills span {
-    color: #E0C15A;
+    color: #d8d8d8;
 
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 600;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
 
-    padding: 6px 12px;
+    padding: 7px 14px;
 
-    border: 1px solid #E0C15A;
+    border: 1px solid #c9a227;
 
     border-radius: 20px;
 
-    background: rgba(224,193,90,0.08);
+    background: rgba(255, 255, 255, 0.03);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 
     animation: skillFloat 3s ease-in-out infinite;
+
+    transition: all 0.3s ease;
 }
 
-
-/* Different floating timing */
-
-.hero-skills span:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.hero-skills span:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.hero-skills span:nth-child(3) {
-    animation-delay: 0.4s;
-}
-
-.hero-skills span:nth-child(4) {
-    animation-delay: 0.6s;
-}
-
-.hero-skills span:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-.hero-skills span:nth-child(6) {
-    animation-delay: 1s;
-}
-
-
-/* Floating animation */
-
-@keyframes skillFloat {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-4px);
-    }
-
+.hero-skills span:hover {
+    color: #f0d56b;
+    border-color: #f0d56b;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.35);
 }
 
 
