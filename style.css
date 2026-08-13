@@ -727,24 +727,6 @@ footer {
 }
 
 /* TABLET */
-@media (max-width: 900px) {
-    .certificate-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    }
-}
-
-/* PHONE */
-@media (max-width: 600px) {
-    .certificate-grid {
-        grid-template-columns: 1fr !important;
-    }
-
-    .certificate-card img {
-        height: auto;
-    }
-}
-
-/* TABLET */
 
 @media (max-width: 900px) {
 
