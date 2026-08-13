@@ -1025,7 +1025,7 @@
     </div>
 
 </footer>
-    ```html
+   
 <script>
 
 const titles = [
@@ -1108,5 +1108,72 @@ typeEffect();
     </div>
 
 </footer>
+
+<script>
+
+const titles = [
+    "Accounting & Finance Professional",
+    "Financial Reporting Specialist",
+    "Payroll & Tax Professional",
+    "ERP & Accounting Systems"
+];
+
+let titleIndex = 0;
+let characterIndex = 0;
+let deleting = false;
+
+const typingElement = document.querySelector(".typing-title");
+
+function typeEffect() {
+
+    const currentTitle = titles[titleIndex];
+
+    if (!deleting) {
+
+        typingElement.textContent =
+            currentTitle.substring(0, characterIndex + 1);
+
+        characterIndex++;
+
+        if (characterIndex === currentTitle.length) {
+
+            deleting = true;
+
+            setTimeout(typeEffect, 1800);
+
+            return;
+        }
+
+    } else {
+
+        typingElement.textContent =
+            currentTitle.substring(0, characterIndex - 1);
+
+        characterIndex--;
+
+        if (characterIndex === 0) {
+
+            deleting = false;
+
+            titleIndex++;
+
+            if (titleIndex === titles.length) {
+                titleIndex = 0;
+            }
+
+        }
+
+    }
+
+    setTimeout(typeEffect, deleting ? 50 : 90);
+}
+
+typeEffect();
+
+</script>
+
+</body>
+
+</html>
 
 
