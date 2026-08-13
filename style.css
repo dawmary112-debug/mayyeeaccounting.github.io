@@ -793,28 +793,30 @@ footer {
 }
 
 
-/* Typing title */
+/* =========================================
+   HERO TITLE & FINANCE KEYWORDS
+========================================= */
 
-.typing-title {
+/* Moving typing title */
+.hero h2.typing-title {
     color: #E0C15A !important;
+    font-weight: 700 !important;
 }
 
 
-/* Moving finance keywords */
-
+/* Finance keywords */
 .hero-skills {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-
     margin-bottom: 25px;
-
-    overflow: hidden;
+    overflow: visible;
 }
 
+
+/* Yellow floating keywords */
 .hero-skills span {
-   .hero-skills span {
-    color: #E0C15A;
+    color: #E0C15A !important;
 
     font-size: 12px;
     font-weight: 700;
@@ -823,7 +825,7 @@ footer {
 
     padding: 6px 12px;
 
-    border: 1px solid rgba(224,193,90,0.70);
+    border: 1px solid #E0C15A;
 
     border-radius: 20px;
 
@@ -832,6 +834,42 @@ footer {
     animation: skillFloat 3s ease-in-out infinite;
 }
 
+
+/* Different floating timing */
+.hero-skills span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.hero-skills span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.hero-skills span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.hero-skills span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.hero-skills span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+
+/* Floating animation */
+@keyframes skillFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+}
 
 /* Slightly different timing */
 
