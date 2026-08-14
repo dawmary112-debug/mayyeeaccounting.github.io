@@ -1057,11 +1057,6 @@ footer {
     transition: all 0.3s ease;
 }
 
-.education-card:hover h3 {
-    color: #60A5FA;
-    transform: translateX(5px);
-}
-
 }
 
 .education-school {
