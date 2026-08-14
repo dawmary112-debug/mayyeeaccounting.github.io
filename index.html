@@ -1200,7 +1200,6 @@
 
 </footer>
 
-
 <!-- =========================
      TYPING EFFECT
 ========================= -->
@@ -1236,7 +1235,6 @@ function typeEffect() {
             deleting = true;
 
             setTimeout(typeEffect, 1800);
-
             return;
         }
 
@@ -1256,9 +1254,7 @@ function typeEffect() {
             if (titleIndex === titles.length) {
                 titleIndex = 0;
             }
-
         }
-
     }
 
     setTimeout(typeEffect, deleting ? 50 : 90);
@@ -1266,16 +1262,13 @@ function typeEffect() {
 
 typeEffect();
 
-</script>
 
+/* =========================
+   EDUCATION TYPING EFFECT
+========================= */
 
-</body>
-
-</html>
-</script>
-
-
-const educationTitles = document.querySelectorAll(".education-title");
+const educationTitles =
+    document.querySelectorAll(".education-title");
 
 educationTitles.forEach((element) => {
 
@@ -1299,7 +1292,10 @@ educationTitles.forEach((element) => {
 
                 deleting = true;
 
-                setTimeout(educationTypeEffect, 1800);
+                setTimeout(
+                    educationTypeEffect,
+                    1800
+                );
 
                 return;
             }
@@ -1315,7 +1311,10 @@ educationTitles.forEach((element) => {
 
                 deleting = false;
 
-                setTimeout(educationTypeEffect, 500);
+                setTimeout(
+                    educationTypeEffect,
+                    500
+                );
 
                 return;
             }
@@ -1330,4 +1329,9 @@ educationTitles.forEach((element) => {
     educationTypeEffect();
 
 });
+
+</script>
+
+</body>
+</html>
 
