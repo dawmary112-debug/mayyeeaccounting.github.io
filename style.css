@@ -847,7 +847,7 @@ footer {
 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.20);
 
-    transition: all 0.3s ease;
+    animation: skillFloat 3s ease-in-out infinite;
 }
 
 .hero-skills span:hover {
@@ -860,6 +860,7 @@ footer {
     transform: translateY(-3px);
 
     box-shadow: 0 7px 18px rgba(56, 189, 248, 0.20);
+   transition: all 0.3s ease;
 }
 
 
