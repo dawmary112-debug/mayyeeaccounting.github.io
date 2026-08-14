@@ -862,7 +862,17 @@ footer {
     box-shadow: 0 7px 18px rgba(56, 189, 248, 0.20);
    transition: all 0.3s ease;
 }
+@keyframes skillFloat {
 
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+}
 
 /* =========================================
    PHOTO HOVER
