@@ -1049,6 +1049,18 @@ footer {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(15,23,42,0.12);
 }
+.education-card h3 {
+    color: #38BDF8;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover h3 {
+    color: #60A5FA;
+    transform: translateX(5px);
+}
 
 }
 
