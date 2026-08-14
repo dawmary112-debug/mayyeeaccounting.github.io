@@ -221,7 +221,7 @@
 
             <div class="education-card">
 
-                <h3>Bachelor of Arts (English)</h3>
+                <h3 class="education-title">Bachelor of Arts (English)</h3>
 
                 <p class="education-school">
                     Yadanabon University – Mandalay
@@ -232,7 +232,7 @@
 
             <div class="education-card">
 
-                <h3>Diploma in Professional Accounting</h3>
+                <h3 class="education-title">Diploma in Professional Accounting</h3>
 
                 <p class="education-school">
                     Association of Accounting Technicians (AAT Level 4 – UK) – 2024
@@ -248,8 +248,7 @@
 
             <div class="education-card">
 
-                <h3>Diploma in Accounting and Finance</h3>
-
+                <h3 class="education-title">Diploma in Accounting and Finance</h3>
                 <p class="education-school">
                     London Chamber of Commerce and Industry
                     (LCCI Level 3 – UK) – 2017
@@ -1279,5 +1278,64 @@ typeEffect();
 </body>
 
 </html>
+<script>
+
+const educationTitles = document.querySelectorAll(".education-title");
+
+educationTitles.forEach((element) => {
+
+    const text = element.textContent.trim();
+
+    element.textContent = "";
+
+    let index = 0;
+    let deleting = false;
+
+    function educationTypeEffect() {
+
+        if (!deleting) {
+
+            element.textContent =
+                text.substring(0, index + 1);
+
+            index++;
+
+            if (index === text.length) {
+
+                deleting = true;
+
+                setTimeout(educationTypeEffect, 1800);
+
+                return;
+            }
+
+        } else {
+
+            element.textContent =
+                text.substring(0, index - 1);
+
+            index--;
+
+            if (index === 0) {
+
+                deleting = false;
+
+                setTimeout(educationTypeEffect, 500);
+
+                return;
+            }
+        }
+
+        setTimeout(
+            educationTypeEffect,
+            deleting ? 50 : 90
+        );
+    }
+
+    educationTypeEffect();
+
+});
+
+</script>
 
 
